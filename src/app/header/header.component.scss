@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    background: #fff;
+    box-shadow: 0 0 13px black;
+    border-radius: 1.5rem;
+    color: #094b79;
+    animation: fadeIn 1s;
+
+    hr {
+        background-color: #000;
+        border-radius: 3px
+    }
+}
+
+.dollar-info {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 50px;
+    }
+    .dollar-text {
+        font-size: 1.5rem
+    }
+}
+
+.euro-info {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 50px;
+    }
+    .euro-text {
+        font-size: 1.5rem
+    }
+}
+
+@media (max-width: 500px){
+    .container {
+        justify-content: space-between;
+
+        hr {
+            margin: 0;
+        }
+
+        .dollar-info {
+            width: 45%;
+            img {
+                width: 45px;
+            }
+            .dollar-text {
+                font-size: 1.1rem;
+            }
+        }
+
+        .euro-info {
+            width: 45%;
+            img {
+                width: 45px;
+            }
+            .euro-text {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

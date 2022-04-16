@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    // background: rgb(2,0,36);
+    // background: linear-gradient(324deg, rgba(2,0,36,1) 0%, rgba(9,75,121,1) 51%, rgba(0,212,255,1) 95%);
+    background: url(./assets/bg.jpg) center (center / cover) no-repeat;
+    height: 100vh;
+}
+
+@import url('./animation/_animations.scss');

@@ -1,0 +1,22 @@
+<div class="container">
+  <img src="../../assets/background-for-phone.png" alt="Decorations" class="background-phone">
+
+  <form class="card" [formGroup]="form">
+    <img src="../../assets/phone.png" alt="Phone" class="inputs-img">
+    <div class="group">
+      <input type="number" formControlName="input">
+      <select formControlName="inputCurrency">
+        <option *ngFor="let newOption of namesOfcurrencies" value={{newOption}}>{{newOption}}</option>
+      </select>
+    </div>
+
+    <img src="../../assets/change.png" alt="Change" class="change-img">
+
+    <div class="group">
+      <input type="number" formControlName="output">
+      <select formControlName="outputCurrency">
+        <option *ngFor="let newOption of namesOfcurrencies" value={{newOption}}>{{newOption}}</option>
+      </select>
+    </div>
+  </form>
+</div>

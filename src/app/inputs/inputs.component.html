@@ -1,0 +1,6 @@
+<div class="group">
+    <input type="number" value="value" (input)="onAmountChange($event)">
+    <select (change)="onCurrencyChange($event)">
+        <option *ngFor="let newOption of namesOfcurrencies" value={{newOption}}>{{newOption}}</option>
+    </select>
+</div>
